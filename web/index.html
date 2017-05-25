@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Usando EL e TagLibs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            .alinhaDireita{
+                text-align: right;
+            }
+        </style>
+           
+    </head>
+    <body>
+        <div><h1>Dados do Produto</h1></div>
+        <form method="post" action="processaDadosProduto">
+            <table>
+                <tr>
+                    <td class="alinhaDireita">Codigo:</td>
+                    <td><input type="text" name="codigo"/></td>
+                </tr>
+                <tr>
+                    <td class="alinhaDireita">Descrição:</td>
+                    <td><input type="text" name="descricao"/></td>
+                </tr>
+                <tr>
+                    <td class="alinhaDireita">Unidade de Medida:</td>
+                    <td>
+                        <select name="unidade">
+                            <option value="kg">Quilograma</option>
+                            <option value="l">Litro</option>
+                            <option value="un">Unidade</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="alinhaDireita">Quant. em Estoque:</td>
+                    <td><input type="text" name="quantidade"/></td>
+                </tr>
+                <tr>
+                    <td class="alinhaDireita" colspan="2">
+                        <input type="submit" value="Enviar Dados"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
